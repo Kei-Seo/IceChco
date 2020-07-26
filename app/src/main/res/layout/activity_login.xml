@@ -4,15 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
     android:paddingTop="10dp"
     android:orientation="vertical">
 
 
 
     <ImageView
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="45dp"
         android:id="@+id/ImageView_main"
         android:layout_gravity="center"
         android:layout_marginBottom="10dp"
@@ -25,11 +25,13 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:hint='Email'
-            android:layout_height="50dp"
             android:id="@+id/TextinputEditText_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint='Email'
+            android:textSize="13dp"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -39,40 +41,33 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:hint='Password'
+            android:textSize="13dp"
             android:layout_height="50dp"
             android:id="@+id/TextinputEditText_password"/>
     </com.google.android.material.textfield.TextInputLayout>
 
 
     <LinearLayout
+        android:layout_marginTop="50dp"
         android:id="@+id/LinearLayout_login"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:background="@drawable/btn_blue"
         android:clickable="true"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingLeft="12dp"
-        android:paddingRight="34dp"
-        android:weightSum="10"
 
         >
 
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_gravity="center"
-            android:background="@null"
-            android:src="@drawable/emailmark" />
 
 
         <TextView
-
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:gravity="center"
             android:text="LOGIN"
+            android:textSize="13dp"
             android:textColor="#ffffff" />
 
     </LinearLayout>
@@ -83,19 +78,20 @@
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="Or"
+        android:textSize="13dp"
         />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_marginTop="16dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:orientation="horizontal"
         android:gravity="center"
         android:background="@drawable/btn_darkblue"
         android:paddingLeft="12dp"
         android:paddingRight="34dp"
         android:clickable="true"
-        android:weightSum="10"
+
 
         >
         <ImageView
@@ -113,6 +109,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:textColor="#ffffff"
+            android:textSize="13dp"
             android:text="Facebook Login"
             />
 

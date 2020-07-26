@@ -1,3 +1,3 @@
 package com.example.icechco
 
-class User (val name: String, val email: String, val content: String)
+class User (val subgroup: String, val clubname: String, val mansize: String, val contentclub: String)

@@ -13,16 +13,17 @@ class ListAdapter (val context: Context, val UserList: ArrayList<User>) : BaseAd
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val view: View = LayoutInflater.from(context).inflate(R.layout.itme_user, null)
-        val Name = view.findViewById<TextView>(R.id.name_tv)
-        val Email = view.findViewById<TextView>(R.id.email_tv)
-        val Content = view.findViewById<TextView>(R.id.content_tv)
+        val Subgroup = view.findViewById<TextView>(R.id.subgroup_tv)
+        val Clubname = view.findViewById<TextView>(R.id.Clubname_tv)
+        val Mansize = view.findViewById<TextView>(R.id.mansize_tv)
+        val Content = view.findViewById<TextView>(R.id.contentclub_tv)
 
         val user = UserList[position]
 
-        Name.text = user.name
-        Email.text = user.email
-        Content.text = user.content
-
+        Subgroup.text = user.subgroup
+        Clubname.text = user.clubname
+        Mansize.text = user.mansize
+        Content.text = user.contentclub
         return view
     }
 
